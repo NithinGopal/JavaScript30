@@ -7,11 +7,20 @@ document.addEventListener("keydown", function (event){
 
 //Detecting Button Press
 
+// for (i = 0; i < document.querySelectorAll(".drum").length; i++) {
+//     document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+  
+//       var buttonInnerHTML = this.innerHTML;
+//       makesound(buttonInnerHTML);
+//       buttonAnimation(buttonInnerHTML);
+//     });
+//   }
+
 // for (i=0; i<document.querySelectorAll('.key').length; i++) {
-//     document.querySelectorAll('.key')[i].addEventListener("click", function ({
-//         let buttonClicked = this.querySelector("." + )
+//     document.querySelectorAll('.key')[i].addEventListener("click", function (){
+//         let buttonClicked = this.querySelector(".key").getAttribute('data-key');
 //         console.log(buttonClicked);
-//     }))
+//     });
 // }
 
 //Button Animation
