@@ -16,12 +16,15 @@ document.addEventListener("keydown", function (event){
 //     });
 //   }
 
-// for (i=0; i<document.querySelectorAll('.key').length; i++) {
-//     document.querySelectorAll('.key')[i].addEventListener("click", function (){
-//         let buttonClicked = this.querySelector(".key").getAttribute('data-key');
-//         console.log(buttonClicked);
-//     });
-// }
+for (i=0; i<document.querySelectorAll('.key').length; i++) {
+    document.querySelectorAll('.key')[i].addEventListener("click", function (){
+        //console.log(this.classList);
+        let buttonClicked = this.classList[0];
+        buttonAnimation(buttonClicked);
+        playSound(buttonClicked);
+        console.log(buttonClicked);
+    });
+}
 
 //Button Animation
 
@@ -32,7 +35,7 @@ function buttonAnimation(currentkey){
     
     setTimeout(() => {
         activeButton.classList.remove('playing');
-    },100);
+    },10);
 }
 
 // Playing Sound 
